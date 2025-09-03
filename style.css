@@ -106,27 +106,6 @@ body {
   letter-spacing: 1px;
 }
 
-/* Responsif */
-@media (max-width: 768px) {
-  .stats {
-    flex-direction: column;
-    gap: 45px;
-    margin: -230px 0px;
-    display: -webkit-inline-box;
-    width: 100%;
-    border-radius: 0px;
-    padding: 30px 14px;
-  }
-
-  .stat-item p {
-    font-size: 8px;
-  }
-
-  .stat-item h2 {
-    font-size: 20px;
-  }
-}
-
 /* STATS-STATS */
 
 /* Hero */
@@ -182,37 +161,6 @@ section.hero1 {
 .btn1:hover {
   background: #f0b400;
   color: #fff;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .nav {
-    display: none;
-    position: absolute;
-    top: 70px;
-    right: 20px;
-    background: rgba(0, 0, 0, 0.9);
-    border-radius: 10px;
-  }
-
-  .nav.active {
-    display: block;
-    width: 25rem;
-  }
-
-  .nav ul {
-    flex-direction: column;
-    gap: 15px;
-    padding: 20px;
-  }
-
-  .mobile-toggle {
-    display: block;
-  }
-
-  .hero-content h1 {
-    font-size: 2rem;
-  }
 }
 
 .pricing {
@@ -336,207 +284,24 @@ section.hero1 {
   color: #ff4500;
 }
 
-/* section2 */
 
-/* RESPONSIVE */
-
-/* Responsive Styles */
-
-/* Tablet */
-@media (max-width: 1024px) {
-  .pricing-cards {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-
-  .hero-content h1 {
-    font-size: 2.5rem;
-  }
-
-  .hero-content p {
-    font-size: 1rem;
-  }
+.hero-content h1 {
+  font-size: 2.9rem;
+  margin-bottom: -9px;
 }
 
-/* Mobile */
-@media (max-width: 768px) {
-  .header {
-    padding: 15px 20px;
-  }
-
-  .contact {
-    padding: 70px 30px;
-  }
-
-  .hero-content h1 {
-    font-size: 2.8rem;
-  }
-
-  .card ul li {
-    margin-bottom: 10px;
-    font-size: 8px;
-  }
-
-  .nav {
-    display: none;
-    position: absolute;
-    top: 60px;
-    right: 0px;
-    background: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 10px;
-    width: 42rem;
-    text-align: center;
-    padding: 5px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
-    opacity: 0;
-    transform: translateY(-15px) translateX(50px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
-  }
-
-  /* Saat aktif (muncul) */
-  .nav.show {
-    display: block;
-    opacity: 1;
-    transform: translateY(0) translateX(0);
-  }
-
-  /* Saat keluar (sembunyi) */
-  .nav.hide {
-    opacity: 0;
-    transform: translateY(-15px) translateX(50px);
-  }
-
-  .nav li {
-    background: rgba(0, 145, 255, 0.1);
-    padding: 10px;
-    margin: 5px 0;
-    border: 1px solid rgba(255, 255, 255, 0.2); /* border tipis */
-    border-radius: 6px;
-    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.2); /* efek timbul */
-  }
-
-  .nav li a {
-    display: block;
-    color: #fff;
-    font-weight: 500;
-    text-decoration: none;
-    -webkit-text-stroke: 0.6px #000; /* stroke biar teks tegas */
-    text-stroke: 0.6px #000; /* untuk browser yang support */
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7); /* efek glow/shadow */
-    transition: all 0.3s ease;
-  }
-
-  .mobile-toggle {
-    display: block;
-  }
-
-  /* =========================
-   PRICING RESPONSIVE
-========================= */
-  .pricing-cards {
-    display: flex;
-    gap: 20px;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    padding-bottom: 10px;
-  }
-
-  /* Scrollbar custom */
-  .pricing-cards::-webkit-scrollbar {
-    height: 8px;
-  }
-  .pricing-cards::-webkit-scrollbar-thumb {
-    background: #ff4500;
-    border-radius: 4px;
-  }
-  .pricing-cards::-webkit-scrollbar-track {
-    background: transparent;
-  }
-
-  .card {
-    min-width: 280px; /* ✅ biar tidak terlalu kecil di mobile */
-    flex: 0 0 auto; /* ✅ card tidak mengecil */
-    padding: 20px;
-    border-radius: 10px;
-    background: #344a72;
-    text-align: center;
-    transition: transform 0.3s ease;
-  }
-
-  /* Hover efek */
-  .card:hover {
-    transform: translateY(-8px);
-  }
-
-  /* =========================
-   RESPONSIVE BREAKPOINTS
-========================= */
-
-  /* Tablet */
-  @media (max-width: 1024px) {
-    .card {
-      min-width: 45%; /* 2 card per layar */
-    }
-  }
-
-  /* Mobile */
-  @media (max-width: 768px) {
-    .card {
-      min-width: 70%; /* 1 card dominan */
-    }
-  }
-
-  /* Extra Small (HP kecil) */
-  @media (max-width: 480px) {
-    .card {
-      min-width: 30%; /* full lebar */
-    }
-  }
-
-  .hero-content h1 {
-    font-size: 2.9rem;
-    margin-bottom: -9px;
-  }
-
-  .hero-content p {
-    font-size: 1rem;
-    padding-top: 0px;
-  }
-
-  .btn {
-    font-size: 12px;
-  }
-
-  .btn1 {
-    padding: 10px 25px;
-    font-size: 14px;
-  }
+.hero-content p {
+  font-size: 1rem;
+  padding-top: 0px;
 }
 
-/* Extra small devices */
-@media (max-width: 480px) {
-  /* .hero-content h1 {
-    font-size: 1.5rem;
-  } */
+.btn {
+  font-size: 12px;
+}
 
-  .hero-content p {
-    font-size: 0.9rem;
-  }
-
-  .btn1 {
-    padding: 8px 20px;
-    font-size: 13px;
-  }
-
-  .pricing-header h2 {
-    font-size: 20px;
-  }
-
-  .pricing-header p {
-    font-size: 13px;
-  }
+.btn1 {
+  padding: 10px 25px;
+  font-size: 14px;
 }
 
 /* RESPONSIVE */
@@ -625,17 +390,7 @@ section.hero1 {
   font-size: 20px;
 }
 
-/* Responsive */
-@media (max-width: 992px) {
-  .services-container {
-    flex-direction: column;
-    text-align: center;
-  }
 
-  .services-grid {
-    width: 100%;
-  }
-}
 
 /* SERVICE */
 
@@ -839,3 +594,244 @@ textarea {
 }
 
 /* CONTACT */
+
+
+/* section2 */
+
+/* RESPONSIVE */
+
+/* Responsive Styles */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .pricing-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 20px;
+  }
+
+  .contact {
+    padding: 70px 30px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.8rem;
+  }
+
+  .card ul li {
+    margin-bottom: 10px;
+    font-size: 8px;
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    width: 42rem;
+    text-align: center;
+    padding: 5px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transform: translateY(-15px) translateX(50px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  /* Saat aktif (muncul) */
+  .nav.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0) translateX(0);
+  }
+
+  /* Saat keluar (sembunyi) */
+  .nav.hide {
+    opacity: 0;
+    transform: translateY(-15px) translateX(50px);
+  }
+
+  .nav li {
+    background: rgba(0, 145, 255, 0.1);
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* border tipis */
+    border-radius: 6px;
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.2); /* efek timbul */
+  }
+
+  .nav li a {
+    display: block;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    -webkit-text-stroke: 0.6px #000; /* stroke biar teks tegas */
+    text-stroke: 0.6px #000; /* untuk browser yang support */
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7); /* efek glow/shadow */
+    transition: all 0.3s ease;
+  }
+
+  .mobile-toggle {
+    display: block;
+  }
+
+  element.style {
+    width: 120%;
+    height: 844px;
+    top: 14px;
+    left: 17px;
+    transform: scale(0.76);
+    clip-path: url(#viewport-mask1);
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+  }
+
+  .nav.active {
+    display: block;
+    width: 25rem;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .mobile-toggle {
+    display: block;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+
+  /* =========================
+   PRICING RESPONSIVE
+========================= */
+  .pricing-cards {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+  }
+
+  /* Scrollbar custom */
+  .pricing-cards::-webkit-scrollbar {
+    height: 8px;
+  }
+  .pricing-cards::-webkit-scrollbar-thumb {
+    background: #ff4500;
+    border-radius: 4px;
+  }
+  .pricing-cards::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .card {
+    min-width: 280px; /* ✅ biar tidak terlalu kecil di mobile */
+    flex: 0 0 auto; /* ✅ card tidak mengecil */
+    padding: 20px;
+    border-radius: 10px;
+    background: #344a72;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+
+  /* Hover efek */
+  .card:hover {
+    transform: translateY(-8px);
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 45px;
+    margin: -230px 0px;
+    display: -webkit-inline-box;
+    width: 100%;
+    border-radius: 0px;
+    padding: 30px 14px;
+  }
+
+  .stat-item p {
+    font-size: 8px;
+  }
+
+  .stat-item h2 {
+    font-size: 20px;
+  }
+
+  .card {
+    min-width: 70%; /* 1 card dominan */
+  }
+}
+
+/* =========================
+   RESPONSIVE BREAKPOINTS
+========================= */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .card {
+    min-width: 45%; /* 2 card per layar */
+  }
+}
+/* Extra Small (HP kecil) */
+@media (max-width: 480px) {
+  .card {
+    min-width: 30%; /* full lebar */
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+
+  .btn1 {
+    padding: 8px 20px;
+    font-size: 13px;
+  }
+
+  .pricing-header h2 {
+    font-size: 20px;
+  }
+
+  .pricing-header p {
+    font-size: 13px;
+  }
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .services-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .services-grid {
+    width: 100%;
+  }
+}
