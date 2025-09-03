@@ -115,7 +115,7 @@ body {
     display: -webkit-inline-box;
     width: 100%;
     border-radius: 0px;
-    padding: 50px 30px;
+    padding: 30px 14px;
     background: rgba(0, 0, 0, 0.12);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
@@ -367,6 +367,14 @@ section.hero1 {
     padding: 15px 20px;
   }
 
+  .contact {
+    padding: 70px 30px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.8rem;
+  }
+
   .card ul li {
     margin-bottom: 10px;
     font-size: 8px;
@@ -491,11 +499,13 @@ section.hero1 {
   }
 
   .hero-content h1 {
-    font-size: 1.8rem;
+    font-size: 2.9rem;
+    margin-bottom: -9px;
   }
 
   .hero-content p {
     font-size: 1rem;
+    padding-top: 0px;
   }
 
   .btn {
@@ -510,9 +520,9 @@ section.hero1 {
 
 /* Extra small devices */
 @media (max-width: 480px) {
-  .hero-content h1 {
+  /* .hero-content h1 {
     font-size: 1.5rem;
-  }
+  } */
 
   .hero-content p {
     font-size: 0.9rem;
