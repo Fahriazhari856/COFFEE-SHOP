@@ -701,7 +701,7 @@ textarea {
     display: none;
     position: absolute;
     top: 70px;
-    right: 20px;
+    right: -18px;
     background: rgba(0, 0, 0, 0.9);
     border-radius: 10px;
   }
