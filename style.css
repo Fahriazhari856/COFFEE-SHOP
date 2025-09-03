@@ -91,7 +91,7 @@ body {
 @media (max-width: 768px) {
   .stats {
     flex-direction: column;
-    gap: 68px;
+    gap: 56px;
     margin: -230px 0px;
     display: -webkit-inline-box;
     width: 100%;
