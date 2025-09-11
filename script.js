@@ -331,26 +331,26 @@
             }
         });
 
-        // Auto-scroll functionality (optional)
-        function autoScroll() {
-            document.querySelectorAll('.products-scroll').forEach(container => {
-                const maxScroll = container.scrollWidth - container.clientWidth;
-                if (container.scrollLeft >= maxScroll - 10) {
-                    container.scrollTo({
-                        left: 0,
-                        behavior: 'smooth'
-                    });
-                } else {
-                    container.scrollBy({
-                        left: 200,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        }
+  //       // Auto-scroll functionality (optional)
+  //       function autoScroll() {
+  //           document.querySelectorAll('.products-scroll').forEach(container => {
+  //               const maxScroll = container.scrollWidth - container.clientWidth;
+  //               if (container.scrollLeft >= maxScroll - 10) {
+  //                   container.scrollTo({
+  //                       left: 0,
+  //                       behavior: 'smooth'
+  //                   });
+  //               } else {
+  //                   container.scrollBy({
+  //                       left: 200,
+  //                       behavior: 'smooth'
+  //                   });
+  //               }
+  //           });
+  //       }
 
-        // Uncomment to enable auto-scroll every 10 seconds
-        // setInterval(autoScroll, 10000);
+  //       Uncomment to enable auto-scroll every 10 seconds
+  //       setInterval(autoScroll, 10000);
         
   // function scrollProducts(sectionId, direction) {
   //   // ambil elemen scroll berdasarkan ID
