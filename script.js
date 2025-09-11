@@ -348,3 +348,27 @@
                 }
             });
         }
+
+        // Uncomment to enable auto-scroll every 10 seconds
+        // setInterval(autoScroll, 10000);
+        
+  function scrollProducts(sectionId, direction) {
+    // ambil elemen scroll berdasarkan ID
+    const scrollContainer = document.getElementById(sectionId + "-scroll");
+
+    if (!scrollContainer) return; // safety
+
+    const scrollAmount = 250; // geser sejauh 250px per klik tombol
+
+    if (direction === "left") {
+      scrollContainer.scrollBy({
+        left: -scrollAmount,
+        behavior: "smooth"
+      });
+    } else if (direction === "right") {
+      scrollContainer.scrollBy({
+        left: scrollAmount,
+        behavior: "smooth"
+      });
+    }
+  }
