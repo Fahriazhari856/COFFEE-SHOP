@@ -349,8 +349,8 @@
             });
         }
 
-        Uncomment to enable auto-scroll every 10 seconds
-        setInterval(autoScroll, 10000);
+        // Uncomment to enable auto-scroll every 10 seconds
+        // setInterval(autoScroll, 10000);
         
   function scrollProducts(sectionId, direction) {
     // ambil elemen scroll berdasarkan ID
