@@ -293,43 +293,43 @@
             }, 3000);
         }
 
-        // Touch/swipe support for mobile
-        let startX = 0;
-        let scrollLeft = 0;
+        // // Touch/swipe support for mobile
+        // let startX = 0;
+        // let scrollLeft = 0;
 
-        document.querySelectorAll('.products-scroll').forEach(container => {
-            container.addEventListener('touchstart', function(e) {
-                startX = e.touches[0].pageX - this.offsetLeft;
-                scrollLeft = this.scrollLeft;
-            });
+        // document.querySelectorAll('.products-scroll').forEach(container => {
+        //     container.addEventListener('touchstart', function(e) {
+        //         startX = e.touches[0].pageX - this.offsetLeft;
+        //         scrollLeft = this.scrollLeft;
+        //     });
 
-            container.addEventListener('touchmove', function(e) {
-                if (!startX) return;
+        //     container.addEventListener('touchmove', function(e) {
+        //         if (!startX) return;
                 
-                e.preventDefault();
-                const x = e.touches[0].pageX - this.offsetLeft;
-                const walk = (x - startX) * 2; // Scroll speed multiplier
-                this.scrollLeft = scrollLeft - walk;
-            });
+        //         e.preventDefault();
+        //         const x = e.touches[0].pageX - this.offsetLeft;
+        //         const walk = (x - startX) * 2; // Scroll speed multiplier
+        //         this.scrollLeft = scrollLeft - walk;
+        //     });
 
-            container.addEventListener('touchend', function() {
-                startX = 0;
-            });
-        });
+        //     container.addEventListener('touchend', function() {
+        //         startX = 0;
+        //     });
+        // });
 
-        // Keyboard navigation
-        document.addEventListener('keydown', function(e) {
-            const focusedSection = document.querySelector('.product-section:hover');
-            if (!focusedSection) return;
+        // // Keyboard navigation
+        // document.addEventListener('keydown', function(e) {
+        //     const focusedSection = document.querySelector('.product-section:hover');
+        //     if (!focusedSection) return;
             
-            const sectionId = focusedSection.querySelector('.products-scroll').id.replace('-scroll', '');
+        //     const sectionId = focusedSection.querySelector('.products-scroll').id.replace('-scroll', '');
             
-            if (e.key === 'ArrowLeft') {
-                scrollProducts(sectionId, 'left');
-            } else if (e.key === 'ArrowRight') {
-                scrollProducts(sectionId, 'right');
-            }
-        });
+        //     if (e.key === 'ArrowLeft') {
+        //         scrollProducts(sectionId, 'left');
+        //     } else if (e.key === 'ArrowRight') {
+        //         scrollProducts(sectionId, 'right');
+        //     }
+        // });
 
         // // Auto-scroll functionality (optional)
         // function autoScroll() {
