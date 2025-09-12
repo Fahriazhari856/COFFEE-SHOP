@@ -102,15 +102,15 @@
             document.body.style.transition = 'opacity 0.3s ease-in-out';
         });
 
-        // Add scroll effects
-        window.addEventListener('scroll', function() {
-            const header = document.querySelector('.header');
-            if (window.scrollY > 100) {
-                header.style.boxShadow = '0 4px 8px rgba(0,0,0,0.15)';
-            } else {
-                header.style.boxShadow = '0 2px 4px rgba(0,0,0,0.1)';
-            }
-        });
+        // // Add scroll effects
+        // window.addEventListener('scroll', function() {
+        //     const header = document.querySelector('.header');
+        //     if (window.scrollY > 100) {
+        //         header.style.boxShadow = '0 4px 8px rgba(0,0,0,0.15)';
+        //     } else {
+        //         header.style.boxShadow = '0 2px 4px rgba(0,0,0,0.1)';
+        //     }
+        // });
 
         // Initialize page
         document.addEventListener('DOMContentLoaded', function() {
