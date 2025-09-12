@@ -129,27 +129,27 @@
             });
         });
 
-        // Scroll functionality for product sections
-        function scrollProducts(sectionId, direction) {
-            const scrollContainer = document.getElementById(sectionId + '-scroll');
-            const cardWidth = 200; // card width + gap
-            const scrollAmount = cardWidth * 2; // scroll 2 cards at a time
+        // // Scroll functionality for product sections
+        // function scrollProducts(sectionId, direction) {
+        //     const scrollContainer = document.getElementById(sectionId + '-scroll');
+        //     const cardWidth = 200; // card width + gap
+        //     const scrollAmount = cardWidth * 2; // scroll 2 cards at a time
             
-            if (direction === 'left') {
-                scrollContainer.scrollBy({
-                    left: -scrollAmount,
-                    behavior: 'smooth'
-                });
-            } else {
-                scrollContainer.scrollBy({
-                    left: scrollAmount,
-                    behavior: 'smooth'
-                });
-            }
+        //     if (direction === 'left') {
+        //         scrollContainer.scrollBy({
+        //             left: -scrollAmount,
+        //             behavior: 'smooth'
+        //         });
+        //     } else {
+        //         scrollContainer.scrollBy({
+        //             left: scrollAmount,
+        //             behavior: 'smooth'
+        //         });
+        //     }
             
-            // Update navigation button states
-            setTimeout(() => updateNavButtons(sectionId), 300);
-        }
+        //     // Update navigation button states
+        //     setTimeout(() => updateNavButtons(sectionId), 300);
+        // }
 
         // // Update navigation button states based on scroll position
         // function updateNavButtons(sectionId) {
