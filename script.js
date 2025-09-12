@@ -129,8 +129,6 @@
             });
         });
 
-
-
         // Scroll functionality for product sections
         function scrollProducts(sectionId, direction) {
             const scrollContainer = document.getElementById(sectionId + '-scroll');
@@ -148,10 +146,7 @@
                     behavior: 'smooth'
                 });
             }
-            // Scroll functionality for product sections
-
-
-                
+            
             // Update navigation button states
             setTimeout(() => updateNavButtons(sectionId), 300);
         }
@@ -171,19 +166,19 @@
             nextBtn.disabled = scrollContainer.scrollLeft >= maxScroll - 10; // 10px threshold
         }
 
-        // Initialize navigation buttons
-        document.addEventListener('DOMContentLoaded', function() {
-            updateNavButtons('cold-brew');
-            updateNavButtons('lattes');
+        // // Initialize navigation buttons
+        // document.addEventListener('DOMContentLoaded', function() {
+        //     updateNavButtons('cold-brew');
+        //     updateNavButtons('lattes');
             
-            // Add scroll listeners to update button states
-            document.querySelectorAll('.products-scroll').forEach(container => {
-                container.addEventListener('scroll', function() {
-                    const sectionId = this.id.replace('-scroll', '');
-                    updateNavButtons(sectionId);
-                });
-            });
-        });
+        //     // Add scroll listeners to update button states
+        //     document.querySelectorAll('.products-scroll').forEach(container => {
+        //         container.addEventListener('scroll', function() {
+        //             const sectionId = this.id.replace('-scroll', '');
+        //             updateNavButtons(sectionId);
+        //         });
+        //     });
+        // });
 
         // Toggle favorite status
         function toggleFavorite(btn, event) {
@@ -354,8 +349,8 @@
             });
         }
 
-        Uncomment to enable auto-scroll every 10 seconds
-        setInterval(autoScroll, 10000);
+        // Uncomment to enable auto-scroll every 10 seconds
+        // setInterval(autoScroll, 10000);
         
   function scrollProducts(sectionId, direction) {
     // ambil elemen scroll berdasarkan ID
