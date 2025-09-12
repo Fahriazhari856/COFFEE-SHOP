@@ -166,19 +166,19 @@
         //     nextBtn.disabled = scrollContainer.scrollLeft >= maxScroll - 10; // 10px threshold
         // }
 
-        // // Initialize navigation buttons
-        // document.addEventListener('DOMContentLoaded', function() {
-        //     updateNavButtons('cold-brew');
-        //     updateNavButtons('lattes');
+        // Initialize navigation buttons
+        document.addEventListener('DOMContentLoaded', function() {
+            updateNavButtons('cold-brew');
+            updateNavButtons('lattes');
             
-        //     // Add scroll listeners to update button states
-        //     document.querySelectorAll('.products-scroll').forEach(container => {
-        //         container.addEventListener('scroll', function() {
-        //             const sectionId = this.id.replace('-scroll', '');
-        //             updateNavButtons(sectionId);
-        //         });
-        //     });
-        // });
+            // Add scroll listeners to update button states
+            document.querySelectorAll('.products-scroll').forEach(container => {
+                container.addEventListener('scroll', function() {
+                    const sectionId = this.id.replace('-scroll', '');
+                    updateNavButtons(sectionId);
+                });
+            });
+        });
 
         // Toggle favorite status
         function toggleFavorite(btn, event) {
