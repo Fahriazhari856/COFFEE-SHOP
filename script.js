@@ -151,20 +151,20 @@
             setTimeout(() => updateNavButtons(sectionId), 300);
         }
 
-        // Update navigation button states based on scroll position
-        function updateNavButtons(sectionId) {
-            const scrollContainer = document.getElementById(sectionId + '-scroll');
-            const section = scrollContainer.closest('.product-section');
-            const prevBtn = section.querySelector('.nav-btn:first-child');
-            const nextBtn = section.querySelector('.nav-btn:last-child');
+        // // Update navigation button states based on scroll position
+        // function updateNavButtons(sectionId) {
+        //     const scrollContainer = document.getElementById(sectionId + '-scroll');
+        //     const section = scrollContainer.closest('.product-section');
+        //     const prevBtn = section.querySelector('.nav-btn:first-child');
+        //     const nextBtn = section.querySelector('.nav-btn:last-child');
             
-            // Check if at beginning
-            prevBtn.disabled = scrollContainer.scrollLeft <= 0;
+        //     // Check if at beginning
+        //     prevBtn.disabled = scrollContainer.scrollLeft <= 0;
             
-            // Check if at end
-            const maxScroll = scrollContainer.scrollWidth - scrollContainer.clientWidth;
-            nextBtn.disabled = scrollContainer.scrollLeft >= maxScroll - 10; // 10px threshold
-        }
+        //     // Check if at end
+        //     const maxScroll = scrollContainer.scrollWidth - scrollContainer.clientWidth;
+        //     nextBtn.disabled = scrollContainer.scrollLeft >= maxScroll - 10; // 10px threshold
+        // }
 
         // // Initialize navigation buttons
         // document.addEventListener('DOMContentLoaded', function() {
