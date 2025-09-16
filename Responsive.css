@@ -1,0 +1,356 @@
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  body {
+    padding: 0px;
+  }
+
+  .hero {
+    background: linear-gradient(135deg, #0f4c3a, #00754a);
+    color: white;
+    position: relative;
+    overflow: hidden;
+    padding-top: 184px;
+    margin-top: -200px;
+  }
+
+  .header-content {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .header {
+    border-radius: 0px 0px 15px 15px;
+    height: 110px;
+    width: auto;
+  }
+
+  .search-container {
+    order: 3;
+    flex-basis: 100%;
+    margin: 0;
+    padding: 0 20px;
+  }
+
+  .user-actions {
+    gap: 15px;
+  }
+
+  .user-action {
+    font-size: 10px;
+    display: none;
+  }
+
+  .nav-content {
+    padding: 0 10px;
+  }
+
+  .nav-item {
+    padding: 15px 15px;
+    font-size: 13px;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .drinks-scroll {
+    margin-left: 0;
+    margin-top: 30px;
+    max-width: 413px;
+    margin: 20px 0px 0px 0px;
+    padding: 10px 20px 51px 50px;
+    display: flex;
+    gap: 15px;
+    transform: translate(-14px, 20px);
+  }
+
+  .filter-content {
+    padding: 0px 0px 20px 10px;
+  }
+
+  .filter-btn {
+    padding: 6px 16px;
+    font-size: 12px;
+  }
+
+  .products-scroll {
+    display: flex;
+    gap: 15px;
+  }
+
+  .product-image {
+    width: 128px;
+    height: 110px;
+  }
+
+  .drink-image {
+    width: 110px;
+    transform: translate(0px, 20px);
+  }
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  body {
+    padding: 0px;
+  }
+
+  .menu-category {
+    justify-content: flex-start;
+    padding-left: 12px;
+    padding-right: 12px;
+    gap: 10px;
+  }
+  .category-btn {
+    font-size: 16px;
+    padding: 7px 16px;
+    min-width: 110px;
+    flex: 0 0 auto;
+  }
+
+  .search-icon {
+    width: 20px;
+    height: 20px;
+    left: 35px;
+  }
+  /* MENU KATEGORY */
+
+  /* MOBILE FOOTER */
+
+  .mobile-footer {
+    display: flex;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    border-top: 1px solid #eee;
+    justify-content: space-around;
+    padding: 8px 0;
+    z-index: 60;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .mobile-footer .footer-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #666;
+    text-decoration: none;
+    font-size: 12px;
+    gap: 4px;
+    transition: color 0.3s ease;
+  }
+
+  .mobile-footer .footer-item.active {
+    color: #19744a;
+  }
+
+  .mobile-footer .footer-item:hover {
+    color: #19744a;
+  }
+
+  .mobile-footer svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* MOBILE FOOTER */
+
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .drinks-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .drink-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .user-actions {
+    gap: 61px;
+    padding: 15px 0px 20px 17px;
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  /* MENU KATEGORY */
+  body {
+    padding: 0px;
+  }
+
+  .products-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .logo {
+    width: 70px;
+    height: auto;
+  }
+
+  .menu-category {
+    display: flex;
+    gap: 16px;
+    background: #fff;
+    padding: 8px 0 10px 0;
+    border-bottom: 1px solid #eee;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: #bbb #fff;
+  }
+  .menu-category::-webkit-scrollbar {
+    height: 6px;
+  }
+  .menu-category::-webkit-scrollbar-thumb {
+    background: #bbb;
+    border-radius: 10px;
+  }
+  .menu-category::-webkit-scrollbar-track {
+    background: #fff;
+  }
+  .category-btn {
+    padding: 8px 22px;
+    border-radius: 22px;
+    border: 1px solid #bbb;
+    background: #fff;
+    color: #444;
+    font-weight: 500;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+  }
+  .category-btn.active {
+    background: #19744a;
+    color: #fff;
+    border-color: #19744a;
+  }
+  .category-btn:hover {
+    background: #19744a;
+    color: #fff;
+    border-color: #19744a;
+  }
+  .product-section {
+    padding: 20px 15px;
+    margin: 10px 0px 60px 0px;
+  }
+
+  .section-title {
+    font-size: 1.3rem;
+  }
+
+  .product-card {
+    width: 10px;
+  }
+
+  .nav-buttons {
+    display: none;
+  }
+
+  .products-scroll {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 0 10px;
+    overflow-x: unset;
+  }
+
+  .drink-item {
+    width: 120px;
+  }
+
+  .product-card {
+    width: 173px;
+    height: 240px;
+  }
+
+  .drink-visual {
+    width: 60px;
+    height: 80px;
+  }
+
+  .product-name {
+    font-size: 12px;
+  }
+
+  .product-price {
+    font-size: 14px;
+  }
+
+  .drinks-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    gap: 21px;
+    margin: 0px;
+    padding-bottom: 0px;
+    padding-top: 10px;
+    overflow-x: unset;
+    scrollbar-width: none;
+  }
+
+  .drinks-grid::-webkit-scrollbar {
+    height: 6px; /* scrollbar tipis di bawah */
+  }
+
+  .drinks-grid::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: ;
+  }
+
+  /* .product-image {
+    height: 130px;
+  } */
+
+  /* Smooth scroll animation */
+  .scroll-animation {
+    transition: transform 0.3s ease;
+  }
+
+  .drink-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+
+  .drink-item:hover {
+    transform: scale(1.05);
+  }
+
+  .drink-icon {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 8px;
+  }
+
+  .drink-name {
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .user-actions {
+    display: none;
+  }
+}
