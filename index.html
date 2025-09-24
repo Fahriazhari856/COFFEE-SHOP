@@ -114,7 +114,7 @@
     <div id="signupModal" class="modal">
       <div class="modal-regist">
         <span id="closeSignup" class="close">&times;</span>
-        <h2>Create Account</h2>
+        <h2 class="regist-font">Create Account</h2>
         <form id="signupForm">
           <input class="form-input"
             type="text"
@@ -131,7 +131,7 @@
           />
           <input class="form-input" type="text" name="txtNoHp" placeholder="No. HP" required />
           <input class="form-input" type="text" name="txtAlamat" placeholder="Alamat" required />
-          <button type="submit">Tambah Akun</button>
+          <button class="create-account" type="submit">Tambah Akun</button>
         </form>
         <p id="registerSuccess" style="color: green; display: none;">Registrasi berhasil! Silakan login.</p>
       </div>
@@ -239,7 +239,7 @@
 
     <div class="products-container drinks-grid">
   <!-- PRODUK 1 -->
-  <div class="product-card">
+  <div onclick="openProductPopup(this, event)" class="product-card">
     <div class="product-image">
       <img src="./IMAGE MENU/Desain tanpa judul/1.png" alt="Cold Brew Original" class="drink-image" />
       <button class="favorite-btn" onclick="toggleFavorite(this, event)">♡</button>
@@ -248,13 +248,12 @@
       <div class="product-name">Cold Brew Original</div>
       <div class="product-footer">
         <div class="product-price" data-small="8000" data-medium="10000" data-large="12000">Rp 10.000</div>
-        <button class="add-btn" onclick="openProductPopup(this, event)">+</button>
       </div>
     </div>
   </div>
 
   <!-- PRODUK 2 -->
-  <div class="product-card">
+  <div onclick="openProductPopup(this, event)" class="product-card">
     <div class="product-image">
       <img src="./IMAGE MENU/Desain tanpa judul/2.png" alt="Vanilla Sweet Cream Cold Brew" class="drink-image" />
       <button class="favorite-btn" onclick="toggleFavorite(this, event)">♡</button>
@@ -263,13 +262,12 @@
       <div class="product-name">Vanilla Sweet Cream Cold Brew</div>
       <div class="product-footer">
         <div class="product-price" data-small="12000" data-medium="15000" data-large="18000">Rp 15.000</div>
-        <button class="add-btn" onclick="openProductPopup(this, event)">+</button>
       </div>
     </div>
   </div>
 
   <!-- PRODUK 3 -->
-  <div class="product-card">
+  <div onclick="openProductPopup(this, event)" class="product-card">
     <div class="product-image">
       <img src="./IMAGE MENU/Desain tanpa judul/3.png" alt="Caramel Cold Brew" class="drink-image" />
       <button class="favorite-btn" onclick="toggleFavorite(this, event)">♡</button>
@@ -278,13 +276,12 @@
       <div class="product-name">Caramel Cold Brew</div>
       <div class="product-footer">
         <div class="product-price" data-small="13000" data-medium="16000" data-large="19000">Rp 16.000</div>
-        <button class="add-btn" onclick="openProductPopup(this, event)">+</button>
       </div>
     </div>
   </div>
 
   <!-- PRODUK 4 -->
-  <div class="product-card">
+  <div onclick="openProductPopup(this, event)" class="product-card">
     <div class="product-image">
       <img src="./IMAGE MENU/Desain tanpa judul/4.png" alt="Mocha Cold Brew" class="drink-image" />
       <button class="favorite-btn" onclick="toggleFavorite(this, event)">♡</button>
@@ -294,13 +291,12 @@
       
       <div class="product-footer">
         <div class="product-price" data-small="14000" data-medium="17000" data-large="20000">Rp 17.000</div>
-        <button class="add-btn" onclick="openProductPopup(this, event)">+</button>
       </div>
     </div>
   </div>
 
   <!-- PRODUK 5 -->
-  <div class="product-card">
+  <div onclick="openProductPopup(this, event)" class="product-card">
     <div class="product-image">
       <img src="./IMAGE MENU/Desain tanpa judul/5.png" alt="Hazelnut Cold Brew" class="drink-image" />
       <button class="favorite-btn" onclick="toggleFavorite(this, event)">♡</button>
@@ -309,13 +305,12 @@
       <div class="product-name">Hazelnut Cold Brew</div>
       <div class="product-footer">
         <div class="product-price" data-small="15000" data-medium="18000" data-large="21000">Rp 18.000</div>
-        <button class="add-btn" onclick="openProductPopup(this, event)">+</button>
       </div>
     </div>
   </div>
 
   <!-- PRODUK 6 -->
-  <div class="product-card">
+  <div onclick="openProductPopup(this, event)" class="product-card">
     <div class="product-image">
       <img src="./IMAGE MENU/Desain tanpa judul/6.png" alt="Coconut Cold Brew" class="drink-image" />
       <button class="favorite-btn" onclick="toggleFavorite(this, event)">♡</button>
@@ -324,7 +319,6 @@
       <div class="product-name">Coconut Cold Brew</div>
       <div class="product-footer">
         <div class="product-price" data-small="15000" data-medium="18000" data-large="21000">Rp 18.000</div>
-        <button class="add-btn" onclick="openProductPopup(this, event)">+</button>
       </div>
     </div>
   </div>
